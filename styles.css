@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.pirmas {
+    background-color: orange;
+    color: white;
+    display: none;
+}
+
+/* 1. Visada matomu - by default
+Mes ji paslepiam kai ekrano dydis yra mazesnis negu 768px
+
+2. Visada nematomas
+Mes ji atidengiam ir parodom kai ekrano dydis yra didesnis negu 768px */
+
+@media only screen and (min-width: 768px) {
+    .pirmas {
+        display: inline-block;
+    }
+}
+
+.antras {
+    background-color: blue;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .antras {
+        display: none;
+    }
+}
